@@ -15,7 +15,20 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <meta name="description" content="Aditya's homepage" />
+        <meta name="author" content="Aditya Patel" />
+        <meta name="author" content="aditya" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <meta name="twitter:title" content="Aditya Patel" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@adi1ya_patel" />
+        <meta name="twitter:creator" content="@adi1ya_patel" />
+        <meta name="twitter:image" content="https://www.craftz.dog/card.png" />
+        <meta property="og:site_name" content="Aditya Patel" />
+        <meta name="og:title" content="Aditya Patel" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.craftz.dog/card.png" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
