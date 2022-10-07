@@ -8,11 +8,12 @@ on:
 
 jobs:
   lint-format:
+  
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-      node-version: [14.x, 16.x, 18.x]
+        node-version: [14.x, 16.x, 18.x]
 
     steps:
       - uses: actions/checkout@v3
@@ -31,7 +32,7 @@ jobs:
 
     strategy:
       matrix:
-      node-version: [14.x, 16.x, 18.x]
+        node-version: [14.x, 16.x, 18.x]
 
     steps:
       - name: Checkout Commit
