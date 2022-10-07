@@ -1,0 +1,51 @@
+name: Portfolio CI
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+
+  lint-format:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+      node-version: [14.x, 16.x, 18.x]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Run lint
+      run: |
+        yarn lint
+      - name: Run prettier
+      run: |
+        yarn format
+
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+      node-version: [14.x, 16.x, 18.x]
+
+    steps:
+      - name: Checkout Commit
+      uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node }}
+      - name: Install packages
+      run: |
+        yarn 
+      - name: Run build
+      run: |
+        yarn build
