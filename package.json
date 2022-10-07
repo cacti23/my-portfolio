@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --check --ignore-path .gitignore ."
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
