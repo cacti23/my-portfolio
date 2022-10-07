@@ -36,6 +36,8 @@ jobs:
       matrix:
         node-version: [14.x, 16.x, 18.x]
 
+    needs: [lint-format]
+
     steps:
       - name: Checkout Commit
         uses: actions/checkout@v2
