@@ -45,7 +45,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Aditya Patel
           </Heading>
-          <p>Digital Craftsman ( Developer )</p>
+          <p>Full Stack Developer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -88,12 +88,10 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          I am a freelance and a full-stack developer based in Bengaluru with a
-          passion for building digital services/end-to-end websites. I have a
-          knack for all things launching products, from planning and designing
-          all the way to solving real-life problems with code. When not online,
-          I love playing football, hiking, camping, etc. Fun fact, I can
-          dead-lift 150 kgs.
+          I am full-stack developer with a passion for building digital
+          services/end-to-end websites. My expertise lies in launching products
+          from planning and design stages to solving real-life problems with
+          code. As a fun fact, I can dead-lift 150 kgs. 😺
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref scroll={false}>
@@ -151,8 +149,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Hiking, Camping, Bird Watching , Playing Football, Gaming , Working
-          Out
+          Hiking, Camping, Playing Football, Gaming, Working Out
         </Paragraph>
       </Section>
 
@@ -198,7 +195,7 @@ const Home = () => (
           </ListItem>
 
           <ListItem>
-            <Link href="https://aditya-patel.medium.com/" target="_blank">
+            <Link href="https://medium.com/@aditya-patel" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
